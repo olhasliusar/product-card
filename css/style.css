@@ -92,7 +92,7 @@ a:hover{
 }
 
 .ba-product{
-	background: url(../img/background.jpg) 0 no-repeat;
+	background: url(../img/background.jpg) 50% 50% no-repeat;
 }
 .ba-product [class*="ba-width-"] {
     padding-left: 51px;
