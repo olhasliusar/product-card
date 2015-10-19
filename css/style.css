@@ -71,9 +71,12 @@ a:hover{
 	padding-right: 20px;
 	max-width: 840px;
 }
-
 .ba-product{
 	position: relative;
+	background: url(../img/background.jpg) 50% 50% no-repeat;
+}
+.ba-product [class*="ba-width-"] {
+    padding-left: 51px;
 }
 .ba-logo{
 	position: absolute;
@@ -85,17 +88,14 @@ a:hover{
 
 .ba-slider{
 	margin-top: 89px;
-/*	margin-left: 41px;*/
+}
+.ba-slide img{
+	max-width: 100%;
+    height: auto;
+    margin-left: 41px;
 }
 .slick-initialized .slick-slide {
 	outline: none;
-}
-
-.ba-product{
-	background: url(../img/background.jpg) 50% 50% no-repeat;
-}
-.ba-product [class*="ba-width-"] {
-    padding-left: 51px;
 }
 
 
@@ -105,16 +105,15 @@ a:hover{
 .slick-dots li button:before{
 	opacity: 1;
 	color: #d7d7d7;
+	font-size: 44px;
+    line-height: 4px;
+    content: '-';
 }
 .slick-dots li.slick-active button:before,
 .slick-dots button:hover:before{
 	opacity: 1;
 	color: #536dfe;
 }
-
-
-
-
 
 .ba-product__info{
 	padding-top: 46px;
