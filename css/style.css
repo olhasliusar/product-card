@@ -1,0 +1,329 @@
+body{
+	font:400 14px/1.5 'Titillium Web', Helvetica, Arial, sans-serif;;
+	color: #263238;
+	letter-spacing: 0.025em;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+button,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border: 1px solid #000;
+}
+a{
+	text-decoration: none;
+	display: block;
+}
+a:hover{
+	color: #000;
+}
+
+.ba-button{
+	width: 145px;
+	height: 45px;
+	font-size: 17px;
+	color: #FFF;
+	line-height: 35px;
+	background-color: #536dfe;
+	border: none;
+}
+.ba-button:hover{
+	background-color: #7B80FE;
+}
+.ba-button:focus{
+	outline: none;
+}
+
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 840px;
+}
+
+.ba-product{
+	position: relative;
+}
+.ba-logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	max-width: 185px;
+}
+
+.ba-slider{
+	margin-top: 89px;
+/*	margin-left: 41px;*/
+}
+.slick-initialized .slick-slide {
+	outline: none;
+}
+
+.ba-product{
+	background: url(../img/background.jpg) 0 no-repeat;
+}
+.ba-product [class*="ba-width-"] {
+    padding-left: 51px;
+}
+
+
+.slick-initialized .slick-slide {
+	outline: none;
+}
+.slick-dots li button:before{
+	opacity: 1;
+	color: #d7d7d7;
+}
+.slick-dots li.slick-active button:before,
+.slick-dots button:hover:before{
+	opacity: 1;
+	color: #536dfe;
+}
+
+
+
+
+
+.ba-product__info{
+	padding-top: 46px;
+    padding-right: 40px;
+}
+.ba-product__model{
+	margin-top: 0;
+	margin-bottom: 0;
+	display: inline-block;
+	float: left;
+}
+.ba-product__spec{
+	color: #536dfe;
+	text-transform: uppercase;
+	display: inline-block;
+	float: right;
+}
+
+.ba-product__title{
+	margin-top: 9px;
+	margin-bottom: 0;
+	font-size: 29px;
+	line-height: 35px;
+}
+.ba-product__title_small{
+	font-size: 24px;
+}
+.ba-product__subtitle{
+	color: #646b6f;
+	font-size: 17px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+}
+.ba-product__description{
+	margin-top: 22px;
+	line-height: 23px;
+}
+.ba-product__description_mark{
+	color: #536dfe;
+}
+
+.ba-rating{
+	padding-top: 10px;
+	padding-bottom: 14px;
+}
+.ba-rating__stars,
+.ba-rating__value{
+	display: inline-block;
+}
+.ba-rating__value{
+	padding-left: 26px;
+	font-size: 15px;
+}
+.ba-rating__reviews:before{
+	content: " (";
+	display: inline-block;
+}
+.ba-rating__reviews:after{
+	content: ") ";
+	display: inline-block;
+}
+.ba-rating__score,
+.ba-product__price{
+	color: #f1425d;
+}
+.ba-product__price{
+	font-weight: 600;
+	font-size: 26px;
+	letter-spacing: 0.035em;
+}
+.ba-product__overcosts{
+	margin-top: 0;
+	font-size: 12px;
+	color: #37474f;
+	opacity: 0.5;
+}
+
+
+.ba-product__variations{
+	text-align: right;
+	font-size: 12px;
+	letter-spacing: 0.01em;
+}
+
+input[type=radio] {
+    display: none;
+}
+.ba-product__variations > label:first-child {
+	display: block;
+	margin-bottom: 22px;
+}
+.ba-product__label{
+	display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    font-size: 13px;
+    margin-left: 14px;
+}
+.ba-product__variations .ba-product__label:before {
+	 content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    -webkit-border-radius: 50%;
+			border-radius: 50%;
+	border: 2px solid white;
+}
+.ba-product__radio_dark:before {
+	background-color: #3c383a;
+}
+.ba-product__radio_light:before {
+	background-color: #e8e6e3;
+}
+input[type="radio"]:checked + .ba-product__label:before{
+   box-shadow: 0 0 5px 2px #536dfe;
+}
+
+
+.ba-product__qty{
+	font-size: 14px;
+	font-weight: 600;
+}
+.ba-product__qty-field{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.ba-product__qty-up,
+.ba-product__qty-down{
+	position: absolute;
+	border: none;
+	background-color: #fff;
+}
+.ba-product__qty-up{
+	bottom: 35px;
+}
+.ba-product__qty-down{
+	bottom: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.ba-product__add-to-card{
+padding-top: 28px;
+}
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('icomoon/fonts/icomoon.eot?ed108c');
+	src:url('icomoon/fonts/icomoon.eot?ed108c#iefix') format('embedded-opentype'),
+		url('icomoon/fonts/icomoon.ttf?ed108c') format('truetype'),
+		url('icomoon/fonts/icomoon.woff?ed108c') format('woff'),
+		url('icomoon/fonts/icomoon.svg?ed108c#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+	content: "\f005";
+	color: #fccf47;
+}
+.icon-star_light:before{
+	color: #c9c9c9;
+}
+.icon-cog:before {
+	content: "\f013";
+}
+.icon-gear:before {
+	content: "\f013";
+}
+.icon-angle-left:before {
+	content: "\f104";
+}
+.icon-angle-right:before {
+	content: "\f105";
+}
+.icon-angle-up:before {
+	content: "\f106";
+}
+.icon-angle-down:before {
+	content: "\f107";
+}
+
+
+
